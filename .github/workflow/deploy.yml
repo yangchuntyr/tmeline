@@ -1,0 +1,29 @@
+name: Deploy React App to GitHub Pages
+
+on:
+  push:
+    branches: [main] # 触发分支（通常为 main 或 master）
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20 # 建议与本地开发环境一致
+
+      - name: Install dependencies
+        run: npm ci # 更快速的依赖安装方式
+
+      - name: Build project
+        run: npm run build # 生成 build 文件夹
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }} # 自动注入的密钥
+          publish_dir: ./build # CRA 的默认构建目录

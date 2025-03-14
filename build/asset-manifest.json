@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/tmeline/static/css/main.6147e1a6.css",
+    "main.js": "/tmeline/static/js/main.f6b05172.js",
+    "static/js/453.c2559cea.chunk.js": "/tmeline/static/js/453.c2559cea.chunk.js",
+    "index.html": "/tmeline/index.html",
+    "main.6147e1a6.css.map": "/tmeline/static/css/main.6147e1a6.css.map",
+    "main.f6b05172.js.map": "/tmeline/static/js/main.f6b05172.js.map",
+    "453.c2559cea.chunk.js.map": "/tmeline/static/js/453.c2559cea.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6147e1a6.css",
+    "static/js/main.f6b05172.js"
+  ]
+}
